@@ -1,0 +1,181 @@
+/* Add a wrapper for positioning */
+.menuBarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background-color: #4D4D4D;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* FIXED POSITION */
+  position: fixed;
+  bottom: 60px;  /* distance from bottom */
+  right: 60px;   /* distance from right */
+  z-index: 1000; /* stay on top of other content */
+}
+
+
+
+.dimBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Just below the menu */
+}
+
+
+
+/* Move the menu options outside the circle */
+.menuBarClickerContainer {
+  position: absolute;
+  bottom: 0px; 
+  right: 60px; /* Adjust as needed to place the menu beside the hamburger */
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 305;
+  align-items: center;
+  border: none;
+
+}
+
+/* Styles for the hamburger icon */
+.menuBarCircleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  transition: all 0.4s ease;
+  align-items: center;
+}
+
+.menuBarCircleContainer hr {
+  border-width: 1.5px;
+  border-style: solid;
+  width: 24px;
+  border-radius: 2px;
+  border-color: white;
+  transition: all 0.4s ease;
+  margin: 1px;
+  transform-origin: center; /* important for proper rotation */
+}
+
+.menuBarCircleContainer.active hr:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 30px;
+}
+
+.menuBarCircleContainer.active hr:nth-child(2) {
+  opacity: 0;
+}
+
+.menuBarCircleContainer.active hr:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  width: 30px;
+}
+
+.menuBarIndividualButtonContainer {
+    background-color: transparent;
+    border-radius: 14px;
+    height: 54px;
+    width: 288px;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;  /* This vertically aligns the children */
+    gap: 10px;
+
+    /* Reset default link styles */
+    text-decoration: none;
+    color: inherit;
+}
+
+.smallInnerMenuBarIndividualFirst {
+    width: 29px;
+    height: 29px;
+    background-color: #FBE8D5;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the content inside is centered */
+
+    margin-left: 20px;
+    border-radius: 9px;
+}
+.menuBarIndividualButtonContainer:hover {
+    background-color: #FBFBFB;
+}
+
+.smallInnerMenuBarIndividualFirst p {
+    font-size: 17px;
+    font-weight: 700;
+    color: #8A2518;
+}
+
+.smallInnerMenuBarIndividualSecond {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+#homesubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #949494;
+}
+#homesubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: white;
+}
+#computersciencesubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #FDF9CB;
+}
+#computerscienceBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #866028;
+}
+#chemistrysubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #DBF9E1;
+}
+#chemistrysubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #316C44;
+}
+#physicssubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #D5D3FC;
+}
+#physicssubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #5F5C9F;
+}
+#biologysubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #F7E6E4;
+}
+#biologysubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #8F3A30;
+}
+#furtherpuremathsubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #F8E1F4;
+}
+#furtherpuremathsubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #AC539D;
+}
+#mathbsubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #D6E1FA;
+}
+#mathbsubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #2046BF;
+}
+#businesssubjectBmenuBarIndividualButtonContaineruttonContainer {
+    background-color: #FBE8D5;
+}
+#businesssubjectBmenuBarIndividualButtonContaineruttonContainer p {
+    color: #8A2518;
+}
