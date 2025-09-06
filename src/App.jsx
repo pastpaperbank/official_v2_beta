@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from './pages/Home';
 import ComputerSciencePage from "./pages/subjects/ComputerSciencePage";
@@ -12,7 +12,7 @@ import BusinessPage from "./pages/subjects/BusinessPage";
 
 function App() {
   return (
-    <Router basename="/official_v2_beta">
+    <HashRouter basename="/official_v2_beta">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/computer-science" element={<ComputerSciencePage />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/math-b" element={<MathBPage />} />
         <Route path="/business" element={<BusinessPage />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
