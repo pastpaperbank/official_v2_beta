@@ -12,7 +12,7 @@ import BusinessPage from "./pages/subjects/BusinessPage";
 
 function App() {
   return (
-    <HashRouter basename="/official_v2_beta">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/computer-science" element={<ComputerSciencePage />} />
