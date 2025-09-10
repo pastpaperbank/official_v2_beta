@@ -1,0 +1,164 @@
+.subjectButtoncontainer {
+    align-items: center;
+    text-align: center;
+    width: 356px;
+    height: 209px;
+    border-radius: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+.subjectButtoncontainer:hover {
+    filter: brightness(0.95); /* Decreases brightness */
+}
+
+#computersciencesubjectButtonContainer {
+    background-color: #F5E2C4;
+}
+#chemistrysubjectButtonContainer {
+    background-color: #CAF0DD;
+}
+#physicssubjectButtonContainer {
+    background-color: #D5D3FC;
+}
+#furtherpuremathsubjectButtonContainer {
+    background-color: #ECC7C6;
+}
+#mathbsubjectButtonContainer {
+    background-color: #F8E1F4;
+}
+#businesssubjectButtonContainer {
+    background-color: #D0E8F2;
+}
+#biologysubjectButtonContainer {
+    background-color: #FDE2C3;
+}
+
+
+.firstSubjectButtonInnerTrack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstSubjectButtonInnerDeepTrack {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.firstSubjectButtonInnerDeepTrack p {
+    font-size: 17px;
+    font-weight: 700;
+}
+.subjectButtonIcon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+
+    margin-left: 19px;
+}
+.firstSubjectButtonInnerDeepRatingTrack {
+    background-color: white;
+    border-radius: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    display: flex;
+    height: 32px;
+    margin-right: 23px;
+}
+.firstSubjectButtonInnerDeepRatingTrack p {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.secondSubjectButtonInnerTrack p{
+    font-size: 23px;
+    color: #333333;
+    text-align: left;
+}
+.secondSubjectButtonInnerTrack {
+    margin-left: 23px;
+}
+
+.thirdSubjectButtonInnerTrack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thirdSubjectButtonInnerTrack img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 23px;
+}
+.thirdSubjectButtonInnerTrack p {
+    font-size: 15px;
+    margin-left: 23px;
+    color: #333333;
+}
+
+.founderQuoteWrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    margin-left: 100px;
+}
+
+.firstFounderQuoteInnerTrack img {
+    height: 49px;
+    margin-bottom: 30px;
+}
+.firstFounderQuoteInnerTrack p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-left: 30px;
+}
+.firstFounderQuoteInnerDeep p {
+    margin: 0;
+    color: #333333;
+    margin-left: 5px;
+}
+.firstFounderQuoteInnerDeep p:first-child{ 
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 35px;
+
+}
+.firstFounderQuoteInnerDeep p:last-child {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+}
+.secondFounderQuoteInnerTrack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease; /* slower zoom */
+}
+
+.secondFounderQuoteInnerTrack img:hover {
+    transform: scale(1.05); /* zoom in slightly */
+}
+.secondFounderQuoteInnerTrack {
+    margin-right: 100px;
+    overflow: hidden;
+    width: 385px;
+    height: 385px;
+    border-radius: 14px;
+}
+
+.firstFounderQuoteInnerActualQuoteTrack {
+    background-color: transparent;
+    width: 500px;
+}
