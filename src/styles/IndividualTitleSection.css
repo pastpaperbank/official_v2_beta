@@ -1,0 +1,111 @@
+.individual-title-section-main-container {
+    background-color: transparent;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.individual-title-section-info-container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.individual-title-section-info-exam-code-container {
+    background-color: #FFFFFF;
+    height: 33px;
+    display: flex;
+    align-items: center;   /* vertical align */
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-width: 1px;
+}
+.individual-title-section-info-exam-code-container p {
+    font-size: 16px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333333;
+    
+
+}
+.individual-title-section-title-container h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.individual-title-section-title-container .exam-board {
+  color: #6E6E6E;
+}
+
+.individual-title-section-title-container .subject {
+  color: #333333;
+}
+
+
+
+
+/* Green selected box */
+.selected-option {
+  background-color: #94D3A2;
+  width: 144px;
+  height: 33px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #DDDDDD;
+  color: #FFFFFF;
+  font-size: 16px;
+
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+  
+
+}
+
+/* Arrow inside green box */
+.selected-option .arrow {
+  font-size: 12px;
+  margin-right: 10px;
+  
+}
+
+/* Dropdown menu */
+.dropdown-options {
+  position: absolute;
+  margin-top: 6px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 154px;
+  z-index: 100;
+  color: #333333;    
+
+  font-size: 16px;
+}
+
+/* Dropdown items */
+.dropdown-options p {
+  margin: 0;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-options p:hover {
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+

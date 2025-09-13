@@ -1,0 +1,14 @@
+.universal-subject-page-main-wrapper {
+    background-color: transparent;
+    width: 100%;
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.universal-subject-page-main-content-wrapper {
+    background-color: lightblue;
+    padding-left: 70px;
+}
